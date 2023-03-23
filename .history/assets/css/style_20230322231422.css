@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-bg: #741b20;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+  background: #000;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  --height: 40px;
+
+  display: inline-block;
+  min-width: 110px;
+  height: var(--height);
+  padding: 0 20px;
+  border-radius: 20px;
+  border: 1px solid var(--header-bg);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: var(--height);
+  color: #fff;
+  background: var(--header-bg);
+  cursor: pointer;
+}
+
+.container {
+  width: 1370px;
+  max-width: calc(100% - 38px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1000px 330px;
+  column-gap: 80px;
+}
+
+/* Header */
+.header {
+  padding: 12px 35px 10px 30px;
+  background: #000;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -10px;
+  z-index: 1;
+}
+
+.logo__brand img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__item {
+  padding: 0 20px;
+}
+
+.navbar__link {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.navbar__link:hover {
+  color: var(--header-bg);
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__login {
+  color: #fff;
+  margin-right: 14px;
+  font-size: 1.2rem;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__img {
+  width: 1100px;
+  border-radius: 12px;
+}
+
+/* Trending */
+.trending-movie {
+  margin-left: -50px;
+  width: 1100px;
+}
+
+.trending-movie__heading {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 8px;
+}
+
+.trending-movie-list {
+  display: flex;
+}
+
+.trending-movie-list__item {
+  margin-top: 20px;
+  width: 211px;
+  height: 230px;
+  object-fit: cover;
+  margin-left: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.trending-movie-list__item:hover {
+  transition: 0.25s;
+  transform: translateY(-16px);
+}
+
+.trending-movie-list__item:hover {
+  transform: scale(1.03); /*phóng lớn ảnh*/
+}
+
+.trending-movie-list__item:first-child {
+  margin-left: 0;
+}
+
+/* .trending-movie__btn-right {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 105px 0 0 1110px;
+  color: var(--header-bg);
+  background: transparent;
+  border: 3px solid var(--header-bg);
+  cursor: pointer;
+  transition: 0.25s;
+} */
+/* 
+.trending-movie__btn-right:hover {
+  background: #696262;
+} */
+
+.hot-movie__heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.hot-movie-wrapper {
+  display: flex;
+  margin-left: -40px;
+}
+
+.hot-movie-wrapper__img {
+  width: 211px;
+}
+
+/* Right */
+.right-side {
+  background: #201f1f;
+  border-radius: 12px;
+}
+
+.dev-information {
+  text-align: center;
+  padding: 50px 10px;
+}
+.dev-information__img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.dev-information__position {
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.dev-information__desc {
+  padding: 30px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-weight: 500;
+  color: #fff;
+}
+
+.dev-information li:nth-child(1) {
+  border-right: 1px solid #b5b5b5;
+}
+
+.list-movie {
+  padding: 20px;
+}
+
+.list-movie__bigTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.list-movie-wrapper {
+  list-style: none;
+  max-width: 400px;
+  margin-left: 30px;
+}
+.list-movie-wrapper__item {
+  display: grid;
+  grid-template-columns: 50px auto;
+  column-gap: 30px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 25px -35px;
+  color: #fff;
+}
+
+.list-movie-wrapper__img {
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 30%;
+  border: 1px solid var(--header-bg);
+}
+.movie-content__name {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.movie-content__status {
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+/* Hot movies*/

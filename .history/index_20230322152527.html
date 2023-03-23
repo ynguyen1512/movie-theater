@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Website</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header fixed">
+      <!-- Header-top -->
+      <div class="header-top">
+        <!-- Logo -->
+        <a href="/">
+          <div class="logo">
+            <span class="logo__brand">
+              <img src="./assets/img/logo.png" alt="logo" />
+            </span>
+          </div>
+        </a>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Genre</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Country</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">My List</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Info</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Action -->
+        <div class="header-action">
+          <a href="#!" class="header-action__login">Log In</a>
+          <button href="#!" class="btn header-action__signup">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <main style="height: 5000px">
+      <div class="container">
+        <!-- Left -->
+        <div class="left-side">
+          <!-- Slider -->
+          <section class="slider">
+            <figure>
+              <img src="./assets/img/banner.jpg" alt="" class="slider__img" />
+            </figure>
+          </section>
+
+          <!-- Trending -->
+          <section class="trending-movie">
+            <p class="trending-movie__heading">Trending Nows</p>
+            <article class="trending-movie-list">
+              <button class="banner-slider__btn-left">
+                <img src="./assets/icons/chevron-left.svg" alt="" />
+              </button>
+              <figure>
+                <img
+                  src="./assets/img/img3.jpg"
+                  alt=""
+                  class="trending-movie-list__item"
+                />
+                <img
+                  src="./assets/img/img4.jpg"
+                  alt=""
+                  class="trending-movie-list__item"
+                />
+                <img
+                  src="./assets/img/img5.jpg"
+                  alt=""
+                  class="trending-movie-list__item"
+                />
+                <img
+                  src="./assets/img/img6.jpg"
+                  alt=""
+                  class="trending-movie-list__item"
+                />
+                <img
+                  src="./assets/img/img7.jpg"
+                  alt=""
+                  class="trending-movie-list__item"
+                />
+              </figure>
+              <button class="trending-movie__btn-right">
+                <img src="./assets/icons/chevron-right.svg" alt="" />
+              </button>
+            </article>
+          </section>
+        </div>
+
+        <!-- right -->
+        <div class="right-side">
+          <div class="dev-information animationTop delay-18">
+            <figure>
+              <img
+                class="dev-information__img"
+                src="./assets/img/user0.PNG"
+                alt=""
+              />
+            </figure>
+            <div class="dev-information__position">Developer</div>
+            <ul class="dev-information__desc">
+              <li>
+                <div class="dev-information__count">20</div>
+                Age
+              </li>
+              <li>
+                <div class="dev-information__count">Lam Dong</div>
+                Province
+              </li>
+            </ul>
+          </div>
+          <!-- List movie on the right side-->
+          <div class="list-movie">
+            <h2 class="list-movie__bigTitle animationTop delay-19">
+              Recommendation
+            </h2>
+            <ul class="list-movie-wrapper">
+              <li class="list-movie-wrapper__item animationTop delay-2">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user1.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__name">
+                    Dinner At My Place (2021)
+                  </div>
+                  <div class="movie-content__status">Incoming</div>
+                </div>
+              </li>
+
+              <li class="list-movie-wrapper__item animationTop delay-21">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user2.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__name">
+                    Breakout Brothers 3 (2022)
+                  </div>
+                  <div class="movie-content__status">Full Vietsub</div>
+                </div>
+              </li>
+
+              <li class="list-movie-wrapper__item animationTop delay-22">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user3.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__name">
+                    Moonlight Butterfly (2022)
+                  </div>
+                  <div class="movie-content__status">Full Vietsub</div>
+                </div>
+              </li>
+
+              <li class="list-movie-wrapper__item animationTop delay-23">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user4.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__name">
+                    Breakout Brothers 3 (2022)
+                  </div>
+                  <div class="movie-content__status">Full Vietsub</div>
+                </div>
+              </li>
+
+              <li class="list-movie-wrapper__item animationTop delay-24">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user5.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__nameActor">
+                    Nine Colors Deer King (2022)
+                  </div>
+                  <div class="movie-content__nameUser">Incoming</div>
+                </div>
+              </li>
+
+              <li class="list-movie-wrapper__item animationTop delay-24">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user5.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__nameActor">
+                    Nine Colors Deer King (2022)
+                  </div>
+                  <div class="movie-content__nameUser">Incoming</div>
+                </div>
+              </li>
+
+              <li class="list-movie-wrapper__item animationTop delay-24">
+                <figure>
+                  <img
+                    class="list-movie-wrapper__img"
+                    src="./assets/img/user5.jpg"
+                  />
+                </figure>
+                <div class="movie-content">
+                  <div class="movie-content__nameActor">
+                    Nine Colors Deer King (2022)
+                  </div>
+                  <div class="movie-content__nameUser">Incoming</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
